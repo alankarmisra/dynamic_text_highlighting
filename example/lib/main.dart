@@ -31,8 +31,9 @@ class _DTHExampleState extends State<DTHExample> {
     return Scaffold(
       body: Center(
         child: DynamicTextHighlighting(
-          text: 'This is a demo text, the specified texts will be highlighted.',
-          highlights: const ['this', 'demo', 'will'],
+          text:
+              'This is the demo text. The specified text strings will be highlighted.',
+          highlights: const ['this', 'demo', 'text', 'highlighted'],
           color: Colors.yellow,
           style: TextStyle(
             fontSize: 18.0,

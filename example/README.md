@@ -1,4 +1,4 @@
-# Dynamic Text Highlighting (DTH) 
+# Dynamic Text Highlighting (DTH)
 # with Null Safety
 
 This package is used to highlight, in a completely dynamic way, 
