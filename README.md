@@ -1,5 +1,6 @@
 # Dynamic Text Highlighting (DTH)
-## (This fork has null safety implemented)
+(This fork has null safety implemented)
+
 This package is used to highlight, in a completely dynamic way, 
 keywords, or phrases, wherever they are present in a specified text.
 
