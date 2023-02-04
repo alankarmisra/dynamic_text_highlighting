@@ -19,7 +19,7 @@ class DTHExampleApp extends StatelessWidget {
 }
 
 class DTHExample extends StatefulWidget {
-  DTHExample({Key key}) : super(key: key);
+  DTHExample({Key? key}) : super(key: key);
 
   @override
   _DTHExampleState createState() => _DTHExampleState();
@@ -30,15 +30,19 @@ class _DTHExampleState extends State<DTHExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: DynamicTextHighlighting(
-          text: 'This is a demo text, the specified texts will be highlighted.',
-          highlights: const ['this', 'demo', 'will'],
-          color: Colors.yellow,
-          style: TextStyle(
-            fontSize: 18.0,
-            color: Colors.black,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: DynamicTextHighlighting(
+            text:
+                'This is the demo text. The specified texts will be highlighted.',
+            highlights: const ['this', 'demo', 'text', 'highlighted'],
+            color: Colors.yellow,
+            style: TextStyle(
+              fontSize: 18.0,
+              color: Colors.black,
+            ),
+            caseSensitive: false,
           ),
-          caseSensitive: false,
         ),
       ),
     );
